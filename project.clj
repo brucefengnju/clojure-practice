@@ -4,10 +4,10 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [compojure "1.3.1"]
-                 [ring/ring-defaults "0.1.2"]]
-  :plugins [[lein-ring "0.8.13"]]
+                 [compojure "1.1.6"]
+                 [ring/ring-core "1.2.1"]
+                 [ring/ring-jetty-adapter "1.2.1"]
+                 [hiccup "1.0.0"]]
+  :plugins [[lein-ring "0.8.10"]]
   :ring {:handler clojure-practice.handler/app}
-  :profiles
-  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                        [ring-mock "0.1.5"]]}})
+  :main clojure-practice.handler)
