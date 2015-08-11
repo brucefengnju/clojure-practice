@@ -6,8 +6,6 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.6"]
                  [ring/ring-core "1.2.1"]
-                 [ring/ring-jetty-adapter "1.2.1"]
                  [hiccup "1.0.0"]]
   :plugins [[lein-ring "0.8.10"]]
-  :ring {:handler clojure-practice.handler/app}
-  :main clojure-practice.handler)
+  :ring {:handler clojure-practice.handler/app})
