@@ -6,6 +6,8 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.6"]
                  [ring/ring-core "1.2.1"]
-                 [hiccup "1.0.0"]]
+                 [hiccup "1.0.0"]
+                 [org.clojure/core.logic "0.8.10"]
+                 [org.toomuchcode/clara-rules "0.8.8"]]
   :plugins [[lein-ring "0.8.10"]]
   :ring {:handler clojure-practice.handler/app})
