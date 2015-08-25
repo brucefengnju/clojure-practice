@@ -8,6 +8,10 @@
                  [ring/ring-core "1.2.1"]
                  [hiccup "1.0.0"]
                  [org.clojure/core.logic "0.8.10"]
-                 [org.toomuchcode/clara-rules "0.8.8"]]
+                 [org.toomuchcode/clara-rules "0.8.8"]
+                 [org.clojure/java.jdbc "0.3.6"]
+                 [mysql/mysql-connector-java "5.1.25"]
+                 [org.clojure/java.jdbc "0.4.1"]
+                 [korma "0.3.0"]]
   :plugins [[lein-ring "0.8.10"]]
   :ring {:handler clojure-practice.handler/app})
